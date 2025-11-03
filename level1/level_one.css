@@ -21,13 +21,40 @@ body {
       gap: 50px;
       padding: 20px;
       margin-top: 10px;
+      
   }
   .meal-card {
       width: 100%;
       opacity: 1;
       box-shadow: 1px 1px 15px black;
-  } .meal-card:hover {
+      height: 200px;
+  } 
+  .meal-card:hover {
       opacity: 0.6;
   }
   
   /* Insert @Media queries here! */
+  @media(min-width: 1201px){
+        .main{
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+  }
+@media(max-width:1200px){
+    .main{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+.webpage{
+    margin:10px
+}
+}
+@media(max-width:768px){
+    .main{
+        display:grid;
+        grid-template-columns: 1fr;
+    }
+    .webpage{
+        margin:10px;
+    }
+}
